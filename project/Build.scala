@@ -2,7 +2,7 @@ import sbt._
 import Keys._
 
 object FinagleLibs extends Build {
-  val libVersion = "6.18.0"
+  val libVersion = "6.20.0"
 
   val baseSettings = Defaults.defaultSettings ++ Seq(
     libraryDependencies ++= Seq(
@@ -63,7 +63,7 @@ object FinagleLibs extends Build {
   lazy val finagleIrcServer =
     finProject("irc-server").settings(
       libraryDependencies ++= Seq(
-        "com.twitter" %% "twitter-server" % "1.6.1")
+        "com.twitter" %% "twitter-server" % "1.7.3")
     ).dependsOn(finagleIrc)
 
   lazy val finagleWebsocket =
