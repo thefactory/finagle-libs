@@ -14,7 +14,7 @@ object FinagleLibs extends Build {
 
   lazy val buildSettings = Seq(
     organization := "com.github.sprsquish",
-    version := libVersion,
+    version := s"${libVersion}.0",
     crossScalaVersions := Seq("2.10.4")
   )
 
